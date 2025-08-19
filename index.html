@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rahul Kamble - Backend Developer</title>
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --text-color: #1e1e1e;
+      --card-bg: #ffffff;
+      --accent-color: #1f6feb;
+      --tech-bg: #e4ecf7;
+      --border-color: #ccc;
+      --table-header-bg: #f0f0f0;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #e4e4e4;
+      --card-bg: #1e1e1e;
+      --accent-color: #58a6ff;
+      --tech-bg: #2d2d2d;
+      --border-color: #333;
+      --table-header-bg: #2c2c2c;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: var(--accent-color);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .tech-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tech-box {
+      background: var(--tech-bg);
+      color: var(--text-color);
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--table-header-bg);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .email {
+      font-weight: bold;
+    }
+
+    .toggle-btn {
+      float: right;
+      margin-top: -10px;
+      padding: 5px 12px;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .toggle-btn:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <h1>Hi 👋, I'm Rahul Kamble</h1>
+    <p><strong>Backend Developer | Java | Scala | GoLang | Microservices | AWS</strong></p>
+
+    <div class="section">
+      <h2>👨‍💻 About Me</h2>
+      <ul>
+        <li>🔧 Backend Developer with 4+ years of experience building scalable and secure systems.</li>
+        <li>💻 Proficient in Java, Scala, GoLang, with strong knowledge of REST APIs, microservices, and cloud deployments.</li>
+        <li>🚀 Experienced in Spring Boot, Play Framework, Gin Gonic, Docker, and AWS.</li>
+        <li>🔐 Passionate about backend architecture, performance optimization, and secure API development.</li>
+        <li>🎯 Currently focused on landing a backend role at Big Tech and contributing to open-source.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Tech Stack</h2>
+      <h4>Languages:</h4>
+      <div class="tech-section">
+        <div class="tech-box">Java</div>
+        <div class="tech-box">Scala</div>
+        <div class="tech-box">Go</div>
+        <div class="tech-box">SQL</div>
+      </div>
+
+      <h4>Frameworks & Tools:</h4>
+      <div class="tech-section">
+        <div class="tech-box">Spring Boot</div>
+        <div class="tech-box">Play</div>
+        <div class="tech-box">Gin</div>
+        <div class="tech-box">Hibernate</div>
+      </div>
+
+      <h4>DevOps & Cloud:</h4>
+      <div class="tech-section">
+        <div class="tech-box">AWS</div>
+        <div class="tech-box">Docker</div>
+        <div class="tech-box">Kubernetes</div>
+        <div class="tech-box">GitLab</div>
+        <div class="tech-box">Jenkins</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📂 Featured Projects <small>(Coming Soon)</small></h2>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>Tech Stack</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/rahulkamble/auth-service-api" target="_blank">Auth Service API</a></td>
+          <td>Java + Spring Boot</td>
+          <td>Secure auth API with JWT + OAuth2</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/rahulkamble/ecommerce-backend" target="_blank">E-commerce Backend</a></td>
+          <td>Scala + Play</td>
+          <td>Microservices-based backend architecture</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/rahulkamble/metrics-tracker" target="_blank">Real-Time Metrics Tracker</a></td>
+          <td>Go + Redis</td>
+          <td>Pub/Sub service for live data tracking</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/rahulkamble/migration-service" target="_blank">Migration Microservice</a></td>
+          <td>Go</td>
+          <td>Fast data migration with REST APIs</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>📫 Let's Connect</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/rahul-kamble" target="_blank">LinkedIn</a><br>
+        📧 <span class="email">rahul301997@gmail.com</span>
+      </p>
+    </div>
+
+    <div class="section">
+      <p>💡 Currently open to backend engineering roles in Java, Scala, or Go.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
